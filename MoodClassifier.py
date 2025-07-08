@@ -12,9 +12,9 @@ nltk.download('wordnet')
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
-train_df = pd.read_csv("Dataset\\archive\\train.txt", sep=";", names=["text", "emotion"])
-val_df = pd.read_csv("Dataset\\archive\\val.txt", sep=";", names=["text", "emotion"])
-test_df = pd.read_csv("Dataset\\archive\\test.txt", sep=";", names=["text", "emotion"])
+train_df = pd.read_csv("train.txt", sep=";", names=["text", "emotion"])
+val_df = pd.read_csv("val.txt", sep=";", names=["text", "emotion"])
+test_df = pd.read_csv("test.txt", sep=";", names=["text", "emotion"])
 
 def cleaningText(data):
     data['text'] = data['text'].str.lower()
