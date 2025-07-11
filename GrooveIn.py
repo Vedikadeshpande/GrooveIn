@@ -39,4 +39,4 @@ if st.button("Recommend"):
             st.components.v1.html(embed_html, height=400)
 
         else:
-            st.error("No playlist found for this mood + genre combo.")
+            st.error("No song found for this mood and genre.")
